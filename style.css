@@ -1,0 +1,138 @@
+/* Globális alapbeállítások */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ebebeb;
+    color: #222222;
+    margin: 0;
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+/* Fő keret: maximum 900px szélesség, középre igazítva */
+.outer-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ebf1f6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Fejléc */
+header {
+    background-color: #2f3e4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px 25px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header .motto {
+    margin: 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #dcdcdc;
+}
+
+/* Tartalmi rész */
+main {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Fehér tartalomdoboz */
+.content-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 6px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+/* Gombok stílusa */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Üzenetmező visszajelzésekhez */
+.message-container {
+    font-weight: bold;
+    font-size: 1rem;
+    min-height: 24px;
+    margin-bottom: 10px;
+}
+
+.msg-success {
+    color: #27ae60; /* Zöld */
+}
+
+.msg-error {
+    color: #cc0000; /* Piros */
+}
+
+.msg-warning {
+    color: #e67e22; /* Narancs */
+}
+
+/* Próbálkozásszámláló */
+.attempts-container {
+    font-size: 0.95rem;
+    color: #222222;
+}
+
+/* Lábléc */
+footer {
+    text-align: center;
+    padding: 15px 20px 25px 20px;
+    font-size: 0.85rem;
+    color: #666666;
+}
